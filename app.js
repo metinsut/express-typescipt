@@ -9,4 +9,9 @@ const port = process.env.PORT || 3000;
 app.get('/', function (req, res) {
     res.json({ name: 'John Doe' });
 });
+app.get('/api', (req, res) => {
+    res.json({
+        status: 'success',
+    });
+});
 app.listen(port);
